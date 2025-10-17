@@ -39,7 +39,7 @@ morse_code_rules = {
 }
 
 morse_code = ""
-sentence = input('What is your sentence ? : \n')
+sentence = input('What is your sentence ? : \n').lower()
 sentence_ = [letters for letters in sentence]
 
 morse = [letter if letter not in morse_code_rules else morse_code_rules[letter] for letter in sentence_]
